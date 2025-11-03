@@ -1,0 +1,84 @@
+/* ################### For Hover effect ######################### */
+
+
+
+.nav-link:hover{
+    color: orange;
+    transition: all 0.5s ease;
+}
+
+.fa-2x:hover{
+    color: orange;
+    cursor: pointer;
+     transition: all 0.5s ease;
+}
+
+/* ###################### Hero Image ################################### */
+
+.hero-img{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0,0,0,0.5)), url("https://www.pumpkinwebdesign.com/web-design-manchester/wp-content/uploads/2019/02/student-849826_1920.jpg");
+   
+    height: 100vh;
+   
+    width:100%;
+    background-size: cover;
+    
+}
+
+
+#overlay{
+     overflow: hidden;
+}
+
+#overlay::after{
+    content: "";
+ position: absolute;
+ height: 100%;
+ width: 100%;
+ background-color: #FFC107;
+ transform: translateY(100%);
+ transition: all 0.5s ease;
+ z-index: 0;
+ 
+
+}
+#overlay:hover::after{
+    transform: translateY(0%);
+    
+}
+/* #d{
+    color: #FFC107;
+} */
+#overlay:hover #d{
+    color: black !important; 
+    cursor: pointer;
+    z-index: 2;
+}
+
+#hov:hover{
+color: #FFC107;
+cursor: pointer;
+transition: all 0.2s;
+}
+
+#center{
+ top: 50%;
+ left: 50%;
+ transform: translateX(-50% );
+ opacity: 0;
+ transition: all 0.7s ease;
+}
+
+#ico:hover #center{
+ opacity: 1;
+}
+#ico{
+    overflow: hidden;
+    color: gray;
+}
+#ico:hover .trans{
+ transform: scale(1.2);
+ transition: all 0.5s ease;
+ 
+}
+
